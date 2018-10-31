@@ -80,23 +80,25 @@ def main():
     button3 = ttk.Button(frame1, text='Button3')
     button3.grid()
 
-
-
     button3['command'] = lambda: (more_stuff(entry_box1.get(), entry_box2.get()))
+
     # ------------------------------------------------------------------
     # TODO: 8. As time permits, do other interesting GUI things!
     # ------------------------------------------------------------------
-    
+
     root.mainloop()
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
+
+
 def stuff(entry_box):
 
     if entry_box == 'ok':
         print('Hello')
     else:
         print('Goodbye')
+
 
 def more_stuff(string, n):
     s = int(n)
